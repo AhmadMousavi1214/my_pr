@@ -1,47 +1,36 @@
 \documentclass{article}
-
 \usepackage[utf8]{inputenc}
 \usepackage{geometry}
 \geometry{a4paper, margin=1in}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{fancyhdr}
-
 \setlength{\headheight}{15pt}
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{Computer Workshop Course}
 \lhead{Final Assignment}
-
-
 \begin{document}
-
 \begin{titlepage}
 \title{
 \textbf{In the Name of God the Beneficent}\par
     \vspace{2in}
-
 \textbf{Final Assignment:}\par
-
 \textbf{Integration of Tools and Practices}\par
     \vspace{2in}
 }
 \author{Seyed Ahmad Mousavi}
-
 \date{\today}
 \maketitle
 \thispagestyle{empty}
 \end{titlepage}
 %new page
 \newpage
-
 \tableofcontents
-
 \fancyfoot[R]{page \thepage}
 \fancyfoot[C]{}
 %new page
 \newpage
-
 \section{Git and GitHub}
 \subsection{Repository Initialization and Commits}
 \begin{enumerate}
@@ -62,13 +51,29 @@
     		\item{ and Upload Release .}
     	\end{enumerate}
 \end{enumerate}
-
 \section{Exploration Tasks}
 \subsection{Vim Advanced Features}
 \begin{enumerate}
-    \item{ runing on tagged commits which has a tag with *.*.* }
-    \item{Create Release }
-    \item{ and Upload Release .}
+    \item{To replace text, enter Normal mode and type (:\%s/old/new/g) , where old is the text that you want to replace, and new is the replacement text.}
+    \item{To automatically indent new lines based on the indentation of the previous line, type (:set autoindent) .}
+    \item{To exit the text editor without saving any changes, press (:q!) .}
 \end{enumerate}
-
+\subsection{Memory profiling}
+\subsubsection{Memory Leak}
+In conclusion, memory leaks can occur when we allocate memory on the heap but forget to release it or free it. Due to memory leaks, we may experience performance degradation and system becomes unstable. Memory leaks cause more damage for long-running programs like servers .
+\subsubsection{Memory profilers}
+In conclusion, memory leaks can occur when we allocate memory on the heap but forget to release it or free it. Due to memory leaks, we may experience performance degradation and system becomes unstable. Memory leaks cause more damage for long-running programs like servers .
+\subsection{GNU/Linux Bash Scripting}
+\subsubsection{fzf}
+\begin{enumerate}
+    \item{A fuzzy search searches for text that matches a term closely instead of exactly. Fuzzy searches help you find relevant results even when the search terms are misspelled .}
+    \item{If we write ls | fzf in terminal we will see a list of every thing is near to what we are typing .}
+\end{enumerate}
+\subsubsection{Using fzf to find your favorite PDF}
+\begin{enumerate}
+    \item{fd -e pdf }
+    \item{fd -e pdf | fzf}
+\end{enumerate}
+\subsubsection{Opening the file using Zathura}
+zathura \$(fd -e pdf | fzf)
 \end{document}
