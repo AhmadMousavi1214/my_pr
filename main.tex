@@ -1,37 +1,74 @@
 \documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{graphicx}
+\usepackage{hyperref}
 \usepackage{fancyhdr}
+
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Computer Workshop Course}
+\lhead{Final Assignment}
 
 
 \begin{document}
 
-\pagestyle{fancy}
-
 \begin{titlepage}
-
 \title{
-	\textbf{In the Name of God the Beneficent the Merciful}\par
-	\vspace{2in}
-	\textbf{Final Assignment:}\par
-	\textbf{Integration of Tools and Practices}\par
-	\vspace{2in}
+\textbf{In the Name of God the Beneficent}\par
+    \vspace{2in}
+
+\textbf{Final Assignment:}\par
+
+\textbf{Integration of Tools and Practices}\par
+    \vspace{2in}
 }
 \author{Seyed Ahmad Mousavi}
 
 \date{\today}
-
 \maketitle
 \thispagestyle{empty}
-
 \end{titlepage}
 %new page
 \newpage
-
-\fancyhead[L]{Finall Assignment}
-\fancyhead[R]{\textit{CONTENTS}}
 
 \tableofcontents
 
 \fancyfoot[R]{page \thepage}
 \fancyfoot[C]{}
+%new page
+\newpage
+
+\section{Git and GitHub}
+\subsection{Repository Initialization and Commits}
+\begin{enumerate}
+    \item {At first i made a directory in my device and then i made .github then workflows in that and copy past main.yml wich was in \url{https://github.com/MiliAxe/CW1402Final/tree/master} .}
+    \item {I made a new repsitory in my github .}
+    \item {I connect my diroctory to my repo with repostory's SSH .}
+    \item {After thease all with making tags and push commits on tags ,\textbf{Git Actions} make a release by tags and give us a document in releases .}
+\end{enumerate}
+\subsection{GitHub Actions for LaTeX Compilation}
+\begin{enumerate}
+    \item {According to what was said in the Guide doc i copy main.yml to my workflows .}
+    \item {What is on workflows runs by \textbf{Git Actions} .}
+    \item {The main.yml basically creates generated PDF file from provided Latex file, it can be set in workflow file as given . this workflow runs on tagged commits which has a tag with *.*.* pattern .}
+    \item {Some jobs of this orkflow is :}
+    	\begin{enumerate}
+    		\item{ runing on tagged commits which has a tag with *.*.* }
+    		\item{Create Release }
+    		\item{ and Upload Release .}
+    	\end{enumerate}
+\end{enumerate}
+
+\section{Exploration Tasks}
+\subsection{Vim Advanced Features}
+\begin{enumerate}
+    \item{ runing on tagged commits which has a tag with *.*.* }
+    \item{Create Release }
+    \item{ and Upload Release .}
+\end{enumerate}
 
 \end{document}
